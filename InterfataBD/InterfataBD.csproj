@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D4F525D-B20A-4808-BDB7-7018CC717249}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>InterfataBD</RootNamespace>
+    <AssemblyName>InterfataBD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\program files\microsoft visual studio\2022\community\common7\ide\extensions\nzq1jxvl.lkf\Assemblies\DataProviders\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Text.Json, Version=7.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefaultForm.Designer.cs">
+      <DependentUpon>DefaultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAngajati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAngajati.Designer.cs">
+      <DependentUpon>FormAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAprovizionari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAprovizionari.Designer.cs">
+      <DependentUpon>FormAprovizionari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormC.Designer.cs">
+      <DependentUpon>FormC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategorii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategorii.Designer.cs">
+      <DependentUpon>FormCategorii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComenzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComenzi.Designer.cs">
+      <DependentUpon>FormComenzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClienti.Designer.cs">
+      <DependentUpon>FormClienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContinutComenzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContinutComenzi.Designer.cs">
+      <DependentUpon>FormContinutComenzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormD.Designer.cs">
+      <DependentUpon>FormD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepartamente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartamente.Designer.cs">
+      <DependentUpon>FormDepartamente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFurnizori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFurnizori.Designer.cs">
+      <DependentUpon>FormFurnizori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionareComenzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionareComenzi.Designer.cs">
+      <DependentUpon>FormGestionareComenzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPiese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPiese.Designer.cs">
+      <DependentUpon>FormPiese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProducatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProducatori.Designer.cs">
+      <DependentUpon>FormProducatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVizComplexa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVizComplexa.Designer.cs">
+      <DependentUpon>FormVizComplexa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVizCompusa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVizCompusa.Designer.cs">
+      <DependentUpon>FormVizCompusa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DefaultForm.resx">
+      <DependentUpon>DefaultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAngajati.resx">
+      <DependentUpon>FormAngajati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAprovizionari.resx">
+      <DependentUpon>FormAprovizionari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormC.resx">
+      <DependentUpon>FormC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategorii.resx">
+      <DependentUpon>FormCategorii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClienti.resx">
+      <DependentUpon>FormClienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComenzi.resx">
+      <DependentUpon>FormComenzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContinutComenzi.resx">
+      <DependentUpon>FormContinutComenzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormD.resx">
+      <DependentUpon>FormD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDepartamente.resx">
+      <DependentUpon>FormDepartamente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFurnizori.resx">
+      <DependentUpon>FormFurnizori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionareComenzi.resx">
+      <DependentUpon>FormGestionareComenzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPiese.resx">
+      <DependentUpon>FormPiese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProducatori.resx">
+      <DependentUpon>FormProducatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVizComplexa.resx">
+      <DependentUpon>FormVizComplexa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVizCompusa.resx">
+      <DependentUpon>FormVizCompusa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SL_060521_43530_17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3395620.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luke-chesser-pJadQetzTkI-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
